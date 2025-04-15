@@ -1,97 +1,159 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-     <!-- Bootstrap CSS -->
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Protejamos a los perros</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="estilos.css" rel="stylesheet">
+  <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
 </head>
 <body>
+  <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Protejamos a los perros</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="pagina1.html">Causas del maltrato</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="pagina2.html">Adopta a un perrito</a>
+            </li>
+            </ul>
+        </div>
+        </div>
+      </nav>
+  </header>
+    
+  <section>
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="imagenes/imagen1.png" class="d-block w-100 mx-auto" alt="...">              </div>
+            <div class="carousel-item">
+              <img src="imagenes/imagen2.png" class="d-block w-100 mx-auto" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="imagenes/imagen3.png" class="d-block w-100 mx-auto" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+      </div>
+  </section>
+  <main class="container">
+    <section>
+      <article class="blog-post">
+        <h2 class="blog-post-title">Alto al Maltrato hacia los Perros</h2>
+        <p>El maltrato animal es una de las problemáticas más tristes e invisibilizadas en nuestra sociedad. Cada año, miles de perros son víctimas de abuso físico, negligencia, abandono y explotación. Muchos de estos animales viven en la calle, sin comida, sin refugio, y expuestos a peligros constantes.</p>
+        <p>Detrás del maltrato hay múltiples causas: la ignorancia, la falta de empatía, la violencia familiar y la ausencia de leyes estrictas. Aunque el problema es serio, también hay esperanza. Cada vez más personas están alzando la voz y luchando por un trato digno hacia los animales.</p>
+        <img src="imagenes/maltratoanimal1.jpg" alt="imagen de maltrato de perros" class="imagen-ajustada">
+        <h2 class="text-center mb-4">Ellos no pudieron defenderse</h2>        
+        <p>Historias de dolor que nos recuerdan por qué debemos alzar la voz por quienes no pueden hacerlo.</p>
+      </article>
+    </section>
+    <section>
+      <hr class="featurette-divider">
 
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Caso Cholito <span class="text-muted">(Chile, 2017).</span></h2>
+          <p class="lead">Uno de los casos más conocidos en Latinoamérica. "Cholito" era un perrito callejero que fue golpeado brutalmente hasta la muerte por empleados de una tienda en Patronato, Santiago. El caso causó indignación nacional, protestas masivas y generó presión para mejorar las leyes de protección animal en Chile.</p>
+        </div>
+        <div class="col-md-5">
+          <img src="imagenes/cholito.jpg" class="imagen-ajustada" alt="imagen de cholito">
+        </div>
+      </div>
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading">Caso de Capitán <span class="text-muted">(Argentina)</span></h2>
+          <p class="lead">Capitán fue un perro que tras la muerte de su dueño, lo buscó y terminó viviendo en el cementerio junto a su tumba durante más de 10 años. Aunque no fue víctima de maltrato físico, su historia refleja el abandono emocional y la falta de apoyo para animales que sufren la pérdida de sus dueños. Generó conciencia sobre la fidelidad de los perros y la necesidad de programas de adopción responsables.</p>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <img src="imagenes/capitan.jpg" class="imagen-ajustada" alt="imagen de capitan">
+        </div>
+      </div>
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Caso de Tidus <span class="text-muted">(España) </span></h2>
+          <p class="lead">Tidus, un pastor belga de poco más de un año, salió como de costumbre a pasear por las inmediaciones de su hogar en Benimàmet, Valencia. Esa noche, no regresó. Horas después, fue encontrado con graves quemaduras en gran parte de su cuerpo, presuntamente provocadas por un grupo de jóvenes.</p>
+        </div>
+        <div class="col-md-5">
+          <img src="imagenes/porqueocurre.jpg" class="imagen-ajustada" alt="Imagen de Tidus">
+        </div>
+      </div>
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading">Caso Huellitas <span class="text-muted">(México)</span></h2>
+          <p class="lead">Huellitas, fue asesinado y torturado. La presunta agresora habría amarrado al perro a una pared y le cortó su estómago, el cachorro se desangró lentamente hasta que murió, una vez consumado el acto la mujer compartió las fotos del can en sus estados de WhatsApp.</p>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <img src="imagenes/huellitas.jpg" class="imagen-ajustada" alt="Descripción de la imagen">
+        </div>
+      </div>
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Caso de Scooby <span class="text-muted">(México)</span></h2>
+          <p class="lead">Scooby fue brutalmente asesinado al ser arrojado a un cazo con aceite hirviendo por un hombre identificado como Sergio “N”. El hecho ocurrió tras una discusión en una carnicería y fue captado por cámaras de seguridad. La difusión del video generó una fuerte indignación en redes sociales, motivando protestas y exigencias de justicia en todo el país. Gracias a la presión social, el agresor fue detenido y vinculado a proceso por el delito de maltrato animal.</p>
+        </div>
+        <div class="col-md-5">
+          <img src="imagenes/Scooby.jpg" class="imagen-ajustada" alt="imagen de scooby">
+        </div>
+      </div>
+      <hr>
+      <p class="text-center">
+        <em>Estos casos no solo muestran la crueldad a la que pueden ser sometidos los animales, sino también la necesidad urgente de educar, sensibilizar y actuar. El maltrato animal no debe ser ignorado ni normalizado. Cada vida importa.</em>
+      </p>
+    </section>
+    <section>
+        <div class="card" style="width: 30rem;">
+          <img src="imagenes/porqueocurre.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">¿Por qué ocurre el maltrato hacia los perros?</h5>
+            <p class="card-text">El maltrato hacia los perros ocurre por varias razones, muchas de ellas relacionadas con factores sociales, culturales, económicos y emocionales. Aquí te dejo algunas de las causas más comunes.</p>
+            <a href="pagina1.html" class="btn btn-dark">Seguir leyendo</a>
+          </div>
+        </div>
+        <div class="card" style="width: 30rem;">
+          <img src="imagenes/perroamado.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Adopta y dales una segunda oportunidad</h5>
+            <p class="card-text">¡Adopta, no compres! Cada perrito aquí está esperando una segunda oportunidad, un hogar lleno de amor y una familia con la que compartir su alegría. Explora nuestras adorables caritas peludas y tal vez encuentres a tu nuevo mejor amigo. 🐾</p>
+            <a href="pagina2.html" class="btn btn-dark">Adopciones</a>
+          </div>
+        <div>
+    </section> 
 
      <!-- Option 1: Bootstrap Bundle with Popper -->
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    
+  </main>  
 </body>
-    <section>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="pagina1.html">Features</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                </li>
-                </ul>
-            </div>
-            </div>
-        </nav>
-    </section>
-    <section>
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="imagenes/foto1.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="imagenes/foto2.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="imagenes/foto3.jpg" class="d-block w-100" alt="...">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-    </section>
-    <section>
-        <div class="card" style="width: 18rem;">
-            <img src="imagenes/foto1.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-          <div class="card" style="width: 18rem;">
-            <img src="imagenes/foto2.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-          <div class="card" style="width: 18rem;">
-            <img src="imagenes/foto3.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-    </section>
 </html>
